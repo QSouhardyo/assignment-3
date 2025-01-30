@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Shop</title>
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/8221d640d2.js" crossorigin="anonymous"></script>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary': '#800080'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .sora-font {
+            font-family: "Sora", serif;
+
+        }
+
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+</head>
+
+<body class="sora-font">
+    <!-- navbar -->
+    <nav class="container mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+
+                <a class="hidden lg:block btn btn-ghost text-xl"><img src="./images/logo-header.png" alt=""></a>
+                <a class="btn btn-ghost text-xl md:hidden"><img src="./images/phone-logo.png" alt=""></a>
+
+            </div>
+            <div class="navbar-center hidden lg:flex ml-[400px]">
+                <ul class="menu menu-horizontal px-1 text-lg">
+                    <li><a>Product</a></li>
+                    <li><a>Service</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+
+            </div>
+            <div class="hidden md:flex gap-10 items-center ml-24 ">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a class="btn border border-[#179800] bg-white text-lg hover:bg-[#179800]">Login</a>
+                <a class="btn bg-[#179800] text-white text-lg hover:bg-[#179800]">Register</a>
+            </div>
+            <div class="navbar-end">
+
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-36 p-2 shadow absolute right-0  origin-top-right rounded-md bg-white  ring-1 ring-black/5 focus:outline-none">
+                        <li><a>Product</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner -->
+    <section>
+        <div class="hero bg-gradient-to-b from-white to-[#EFEBE3] min-h-screen">
+            <div class="hero-content text-center">
+                <div class="max-w-3xl">
+                    <h1 class="text-5xl font-bold">Freshness <span class="text-[#179800]">You Can</span>
+                        <br>
+                        <span class="text-[#179800]">Count</span> On, Prices You’ll Love!
+                    </h1>
+                    <p class="py-6">
+                        Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got
+                        you covered every day!
+                    </p>
+                    <img class="w-full" src="./images/hero-vegetables.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services -->
+    <section>
+        <h3 class="text-[#179800] text-4xl font-semibold ml-7 md:ml-44">Services</h3>
+        <div class="flex flex-col justify-center items-center md:flex-row gap-5">
+            <div class="card bg-[#efebe3] w-80 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <div class="avatar">
+                        <div class="w-24 rounded-full">
+                            <img class="bg-white p-3" src="./images/service.png" />
+                        </div>
+                    </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">24/7 Services </h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+
+                </div>
+            </div>
+            <div class="card bg-[#efebe3] w-80 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <div class="avatar">
+                        <div class="w-24 rounded-full">
+                            <img class="bg-white p-3" src="./images/delivery.png" />
+                        </div>
+                    </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Fast Delivery</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+
+                </div>
+            </div>
+            <div class="card bg-[#efebe3] w-80 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <div class="avatar">
+                        <div class="w-24 rounded-full">
+                            <img class="bg-white p-3" src="./images/healthy.png" />
+                        </div>
+                    </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Healthy Products </h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
