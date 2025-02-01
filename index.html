@@ -51,7 +51,7 @@
             <div class="navbar-start">
 
                 <a class="hidden lg:block btn btn-ghost text-xl"><img src="./images/logo-header.png" alt=""></a>
-                <a class="btn btn-ghost text-xl md:hidden"><img src="./images/phone-logo.png" alt=""></a>
+                <a class="btn btn-ghost text-xl lg:hidden"><img src="./images/phone-logo.png" alt=""></a>
 
             </div>
             <div class="navbar-center hidden lg:flex ml-[400px]">
@@ -62,7 +62,7 @@
                 </ul>
 
             </div>
-            <div class="hidden md:flex gap-10 items-center ml-24 ">
+            <div class="hidden lg:flex gap-10 items-center ml-24 ">
                 <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                 <i class="fa-solid fa-cart-shopping"></i>
                 <a class="btn border border-[#179800] bg-white text-lg hover:bg-[#179800]">Login</a>
@@ -108,8 +108,8 @@
 
     <!-- services -->
     <section class="mt-20">
-        <h3 class="text-[#179800] text-4xl font-semibold ml-7 md:ml-44">Services</h3>
-        <div class="flex flex-col justify-center items-center md:flex-row gap-5">
+        <h3 class="text-[#179800] text-4xl font-semibold ml-7 lg:ml-44">Services</h3>
+        <div class="flex flex-col justify-center items-center lg:flex-row gap-5">
             <div class="card bg-[#efebe3] w-80 shadow-xl">
                 <figure class="px-10 pt-10">
                     <div class="avatar">
@@ -316,10 +316,10 @@
     </section>
 
     <!-- offers -->
-    <section class="mt-20">
+    <section class="my-20">
         <h3 class="text-[#179800] text-4xl font-semibold ml-7 lg:ml-36 py-10">Arrival & Offers</h3>
         <div class="flex flex-col justify-center items-center lg:flex-row gap-4">
-            <!-- green -->
+            green
             <div class="card card-side bg-[#115414] pt-5 shadow-xl w-[350px]  lg:w-[600px] lg:h-[295px]">
                 <div class="card-body text-left p-5">
                     <div class="mr-[90px]"><img src="./images/dawat-logo.png" alt=""></div>
@@ -334,7 +334,7 @@
                     <img class="w-full" src="./images/dawat-mock-up.png" alt="" />
                 </figure>
             </div>
-            <!-- blue -->
+            blue
             <div class="card card-side bg-[#102861]  shadow-xl w-[350px] h-[230px] lg:w-[450px] lg:h-[295px] pt-5">
                 <div class="card-body text-left lg:p-5">
                     <div class="mr-[90px]"><img class="w-[40%]" src="./images/india-gate-logo.png" alt=""></div>
@@ -351,10 +351,68 @@
             </div>
         </div>
     </section>
+
+    <!-- Snacks -->
+    <section class="mt-20">
+        <h3 class="text-[#179800] text-4xl font-semibold ml-7 lg:ml-36 py-10">Snacks</h3>
+        <div class="flex flex-col justify-center items-center lg:flex-row gap-10">
+            <div
+                class="bg-[#efebe3] p-4 text-center w-[350px] rounded-2xl transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 ease-in-out animate-pulse">
+                <div class="avatar">
+                    <div class="w-36 rounded-xl">
+                        <img src="./images/pringels.png" alt="">
+                    </div>
+                </div>
+                <div>
+
+                    <h2 class="text-4xl font-bold">Pringles</h2>
+                    <p class="text-xl font-semibold">2.92$</p>
+                    <p class="text-xl font-semibold"><i class="fa-solid fa-star text-yellow-500"></i> 4.5
+                    </p>
+                </div>
+
+            </div>
+            <div
+                class="bg-[#efebe3] p-4 text-center  w-[350px] rounded-2xl transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 ease-in-out animate-bounce">
+                <div class="avatar">
+                    <div class="w-36 rounded-xl">
+                        <img src="./images/roll.png" alt="">
+                    </div>
+                </div>
+                <div>
+
+                    <h2 class="text-4xl font-bold">Chicken Roll</h2>
+                    <p class="text-xl font-semibold">1.2$</p>
+                    <p class="text-xl font-semibold"><i class="fa-solid fa-star text-yellow-500"></i> 4.5
+                    </p>
+                </div>
+
+            </div>
+            <div
+                class="bg-[#efebe3] p-4 text-center  w-[350px] rounded-2xl transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 ease-in-out animate-pulse">
+                <div class="avatar">
+                    <div class="w-36 rounded-xl">
+                        <img src="./images/biscuits.png" alt="">
+                    </div>
+                </div>
+                <div>
+
+                    <h2 class="text-4xl font-bold">Biscuits</h2>
+                    <p class="text-xl font-semibold">6$</p>
+                    <p class="text-xl font-semibold"><i class="fa-solid fa-star text-yellow-500"></i> 4.5
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
     <!-- floating card -->
     <section class="">
         <div
-            class="bg-[#efebe3] p-5 text-center w-[350px] relative top-64 rounded-2xl lg:top-44 lg:flex items-center justify-between lg:w-[1100px] mx-auto">
+            class="bg-[#efebe3] p-5 text-center w-[320px] relative top-64 rounded-2xl lg:top-44 lg:flex items-center justify-between lg:w-[1100px] mx-auto">
             <div class="pic-left">
                 <div>
                     <img src="./images/vegetable-busket.png" alt="">
@@ -364,7 +422,7 @@
                 <h3 class=" text-4xl font-semibold">Get Grocery News!</h3>
                 <p class="my-5">Exclusive training tips, ticks, product deals and more.</p>
                 <form class="my-5">
-                    <input class="input input-bordered join-item w-80" placeholder="Enter email...." />
+                    <input class="input input-bordered join-item w-72" placeholder="Enter email...." />
 
 
                 </form>
@@ -372,6 +430,7 @@
             </div>
         </div>
     </section>
+
     <!-- footer -->
 
     <footer class="bg-[#179800] text-white w-auto">
@@ -409,6 +468,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
